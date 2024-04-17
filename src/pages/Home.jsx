@@ -39,9 +39,16 @@ function Home() {
                 step="1"
                 value={data}
                 onChange={rangeValue}
+                style={{
+                  background: `linear-gradient(to right, hsl(174, 77%, 80%) 0%, hsl(174, 77%, 80%) ${
+                    data / 2
+                  }%, hsl(224, 65%, 95%) ${
+                    data / 2
+                  }%, hsl(224, 65%, 95%) 100%)`,
+                }}
               />
 
-              <div className="viewsGot" style={{ width: `${data / 2}%` }}></div>
+             
             </div>
             <h1>
               $
