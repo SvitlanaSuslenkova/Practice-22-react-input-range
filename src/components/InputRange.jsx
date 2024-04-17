@@ -8,6 +8,7 @@ export default function InputRange({
   step,
   data,
   onChange,
+  style,
 }) {
   return (
     <input
@@ -18,6 +19,7 @@ export default function InputRange({
       step={step}
       data={data}
       onChange={onChange}
+      style={style}
     ></input>
   );
 }
