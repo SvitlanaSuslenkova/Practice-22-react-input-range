@@ -1,4 +1,4 @@
-import "./InputRange.css";
+import './InputRange.css';
 
 export default function InputRange({
   type,
@@ -6,7 +6,7 @@ export default function InputRange({
   max,
   defaultValue,
   step,
-  data,
+  value,
   onChange,
   style,
 }) {
@@ -17,7 +17,7 @@ export default function InputRange({
       max={max}
       defaultValue={defaultValue}
       step={step}
-      data={data}
+      value={value}
       onChange={onChange}
       style={style}
     ></input>
