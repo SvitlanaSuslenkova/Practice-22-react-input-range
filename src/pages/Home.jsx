@@ -1,20 +1,18 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import iconchecked from "../assets/icon-check.svg";
-import ChallengeBy from "../components/ChallengeBy";
-import Button from "../components/Button";
-import InputRange from "../components/InputRange";
-import InputCheckbox from "../components/InputCheckbox";
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import iconchecked from '../assets/icon-check.svg';
+import ChallengeBy from '../components/ChallengeBy';
+import Button from '../components/Button';
+import InputRange from '../components/InputRange';
+import InputCheckbox from '../components/InputCheckbox';
 
 function Home() {
+  let ppmFor100kViews = 16;
+  let yearDiscountPercent = 25;
+  const yearPriceIndex = 1 - yearDiscountPercent / 100;
   const [data, setData] = useState(100);
   const [year, setYear] = useState(false);
-  const rangeValue = (e) => setData(e.target.value);
-  const priceforyear = () => {
-    !year ? setYear(true) : setYear(false);
-  };
-  let ppmFor100kViews = 16;
-  console.log(data);
+
   return (
     <>
       <header>
@@ -38,17 +36,25 @@ function Home() {
                 defaultValue="100"
                 step="1"
                 value={data}
-                onChange={rangeValue}
+                onChange={(e) => setData(e.target.value)}
+                style={{
+                  background: `linear-gradient(to right, hsl(174, 77%, 80%) 0%, hsl(174, 77%, 80%) ${
+                    data / 2
+                  }%, hsl(224, 65%, 95%) ${
+                    data / 2
+                  }%, hsl(224, 65%, 95%) 100%)`,
+                }}
               />
-
-              <div className="viewsGot" style={{ width: `${data / 2}%` }}></div>
             </div>
             <h1>
               $
               {year
-                ? (((ppmFor100kViews * 12 * 0.75) / 100) * data).toFixed(2)
+                ? (
+                    ((ppmFor100kViews * 12 * yearPriceIndex) / 100) *
+                    data
+                  ).toFixed(2)
                 : ((ppmFor100kViews / 100) * data).toFixed(2)}
-              <span className="monthORyear"> / {year ? "year" : "month"}</span>
+              <span className="monthORyear"> / {year ? 'year' : 'month'}</span>
             </h1>
           </div>
           <div className="billingDiv">
@@ -57,7 +63,7 @@ function Home() {
               type="checkbox"
               id="yearon"
               htmlFor="yearon"
-              onClick={priceforyear}
+              onClick={() => (!year ? setYear(true) : setYear(false))}
             />
 
             <span className="billingSpan">Yearly Billing</span>

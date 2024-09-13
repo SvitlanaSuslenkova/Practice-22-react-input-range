@@ -6,6 +6,16 @@ input[type="range"] {
   background: transparent;
   cursor: pointer;
   width: 100%;
+
+  /* background: linear-gradient(
+    to right,
+    hsl(174, 77%, 80%) 0%,
+    hsl(174, 77%, 80%) 50%,
+    hsl(224, 65%, 95%) 50%,
+    hsl(224, 65%, 95%) 100%
+  );*/
+  border-radius: 0.5rem;
+  height: 0.5rem;
 }
 
 /* Removes default focus */
@@ -16,7 +26,7 @@ input[type="range"]:focus {
 /***** Chrome, Safari, Opera and Edge Chromium styles *****/
 /* slider track */
 input[type="range"]::-webkit-slider-runnable-track {
-  background-color: var(--empty-slider-bar);
+  /* background-color: var(--empty-slider-bar);*/
   border-radius: 0.5rem;
   height: 0.5rem;
 }
@@ -52,7 +62,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
 /******** Firefox styles ********/
 /* slider track */
 input[type="range"]::-moz-range-track {
-  background-color: var(--empty-slider-bar);
+  /*background-color: var(--empty-slider-bar);*/
   border-radius: 0.5rem;
   height: 0.5rem;
 }
@@ -75,7 +85,7 @@ input[type="range"] {
   margin: 32px auto;
 }
 
-.viewsGot {
+/*.viewsGot {
   background-color: var(--full-slider-bar);
 
   height: 0.5rem;
@@ -83,4 +93,4 @@ input[type="range"] {
   position: relative;
   top: calc(-32px - 0.5rem);
   z-index: 1;
-}
+}*/
