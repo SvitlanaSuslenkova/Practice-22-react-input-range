@@ -45,6 +45,8 @@ function Home() {
                   }%, hsl(224, 65%, 95%) 100%)`,
                 }}
               />
+
+              <div className="viewsGot" style={{ width: `${data / 2}%` }}></div>
             </div>
             <h1>
               $

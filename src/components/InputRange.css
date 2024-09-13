@@ -1,12 +1,14 @@
 /********** Range Input Styles **********/
 /*Range Reset*/
-input[type="range"] {
+input[type='range'] {
   -webkit-appearance: none;
   appearance: none;
   background: transparent;
   cursor: pointer;
   width: 100%;
 
+  border-radius: 0.5rem;
+  height: 0.5rem;
   /* background: linear-gradient(
     to right,
     hsl(174, 77%, 80%) 0%,
@@ -14,25 +16,23 @@ input[type="range"] {
     hsl(224, 65%, 95%) 50%,
     hsl(224, 65%, 95%) 100%
   );*/
-  border-radius: 0.5rem;
-  height: 0.5rem;
 }
 
 /* Removes default focus */
-input[type="range"]:focus {
+input[type='range']:focus {
   outline: none;
 }
 
 /***** Chrome, Safari, Opera and Edge Chromium styles *****/
 /* slider track */
-input[type="range"]::-webkit-slider-runnable-track {
+input[type='range']::-webkit-slider-runnable-track {
   /* background-color: var(--empty-slider-bar);*/
   border-radius: 0.5rem;
   height: 0.5rem;
 }
 
 /* slider thumb */
-input[type="range"]::-webkit-slider-thumb {
+input[type='range']::-webkit-slider-thumb {
   position: relative;
   -webkit-appearance: none; /* Override default look */
   appearance: none;
@@ -49,26 +49,26 @@ input[type="range"]::-webkit-slider-thumb {
   box-shadow: 0rem 1rem 1rem var(--full-slider-bar);
   z-index: 2;
 }
-input[type="range"]:hover::-webkit-slider-thumb {
+input[type='range']:hover::-webkit-slider-thumb {
   filter: brightness(110%);
 }
-input[type="range"]:hover::-moz-range-thumb {
+input[type='range']:hover::-moz-range-thumb {
   filter: brightness(110%);
 }
-input[type="range"]:focus::-webkit-slider-thumb {
+input[type='range']:focus::-webkit-slider-thumb {
   filter: brightness(80%);
 }
 
 /******** Firefox styles ********/
 /* slider track */
-input[type="range"]::-moz-range-track {
+input[type='range']::-moz-range-track {
   /*background-color: var(--empty-slider-bar);*/
   border-radius: 0.5rem;
   height: 0.5rem;
 }
 
 /* slider thumb */
-input[type="range"]::-moz-range-thumb {
+input[type='range']::-moz-range-thumb {
   position: relative;
   background-color: var(--slider-backround);
   height: 2.5rem;
@@ -78,10 +78,10 @@ input[type="range"]::-moz-range-thumb {
   z-index: 2;
 }
 
-input[type="range"]:focus::-moz-range-thumb {
+input[type='range']:focus::-moz-range-thumb {
   filter: brightness(80%);
 }
-input[type="range"] {
+input[type='range'] {
   margin: 32px auto;
 }
 
