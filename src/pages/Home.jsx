@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import iconchecked from '../assets/icon-check.svg';
-import ChallengeBy from '../components/ChallengeBy';
-import Button from '../components/Button';
-import InputRange from '../components/InputRange';
-import InputCheckbox from '../components/InputCheckbox';
+import { ChallengeBy } from '../components/ChallengeBy';
+import { Button } from '../components/Button';
+import { InputRange } from '../components/InputRange';
+import { InputCheckbox } from '../components/InputCheckbox';
 
 const PPM_FOR_1K_VIEWS = 16 / 100;
 const YEAR_MONTHS_AFTER_DISCOUNT = 12 * (1 - 0.25);
@@ -14,7 +14,7 @@ const ADVANTAGES = [
   'Email reports',
 ];
 
-function Home() {
+export const Home = () => {
   const [data, setData] = useState(100);
   const [isYear, setIsYear] = useState(false);
 
@@ -102,6 +102,4 @@ function Home() {
       <ChallengeBy />
     </>
   );
-}
-
-export default Home;
+};

@@ -82,15 +82,5 @@ input[type='range']:focus::-moz-range-thumb {
   filter: brightness(80%);
 }
 input[type='range'] {
-  margin: 32px auto;
+  margin: 2rem auto;
 }
-
-/*.viewsGot {
-  background-color: var(--full-slider-bar);
-
-  height: 0.5rem;
-  border-radius: 2rem;
-  position: relative;
-  top: calc(-32px - 0.5rem);
-  z-index: 1;
-}*/

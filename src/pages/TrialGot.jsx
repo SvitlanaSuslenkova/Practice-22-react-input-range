@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import Button from '../components/Button';
+import { Button } from '../components/Button';
 import './TrialGot.css';
 
-export default function TrialGot() {
+export const TrialGot = () => {
   return (
     <div className="trial-got-div">
       <p className="signed-up">You have signed up for our 30-day trial!</p>
@@ -12,4 +12,4 @@ export default function TrialGot() {
       </Link>
     </div>
   );
-}
+};

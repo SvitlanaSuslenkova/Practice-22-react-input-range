@@ -1,5 +1,5 @@
 import './InputCheckbox.css';
-export default function InputCheckbox({ htmlFor, ...inputProps }) {
+export const InputCheckbox = ({ htmlFor, ...inputProps }) => {
   return (
     <>
       <input type="checkbox" {...inputProps}></input>
@@ -7,4 +7,4 @@ export default function InputCheckbox({ htmlFor, ...inputProps }) {
       <label htmlFor={htmlFor}></label>
     </>
   );
-}
+};

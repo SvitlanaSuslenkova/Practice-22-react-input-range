@@ -1,18 +1,18 @@
-const ChallengeBy = () => {
+export const ChallengeBy = () => {
   return (
-    <p style={{ fontSize: "11px", textAlign: "center", marginTop: "24px" }}>
-      Challenge by{" "}
+    <p style={{ fontSize: '11px', textAlign: 'center', marginTop: '24px' }}>
+      Challenge by{' '}
       <a
-        style={{ color: "hsl(228, 45%, 44%)" }}
+        style={{ color: 'hsl(228, 45%, 44%)' }}
         href="https://www.frontendmentor.io?ref=challenge"
         target="_blank"
         rel="noreferrer"
       >
         Frontend Mentor
       </a>
-      . Coded by{" "}
+      . Coded by{' '}
       <a
-        style={{ color: "hsl(228, 45%, 44%)" }}
+        style={{ color: 'hsl(228, 45%, 44%)' }}
         href="https://www.frontendmentor.io/profile/SvitlanaSuslenkova"
       >
         Svitlana Suslenkova
@@ -21,5 +21,3 @@ const ChallengeBy = () => {
     </p>
   );
 };
-
-export default ChallengeBy;
