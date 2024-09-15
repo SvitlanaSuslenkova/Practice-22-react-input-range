@@ -2,26 +2,26 @@
   background-color: var(--pricing-component-background);
   background-image: url(../assets/pattern-circles-light.svg);
   background-repeat: no-repeat;
-  background-position: top 10px right 10px;
+  background-position: top 0.625rem right 0.625rem;
   border-radius: 0.5em;
-  padding: 36px 7.34% 87px;
+  padding: 2.25rem 7.34% 5.438rem;
   box-shadow: 0 0.1rem 2rem var(--toggle-background);
 }
 .signed-up {
   font-size: 6vw;
   color: var(--text-cta-background);
-  margin-top: 64px;
+  margin-top: 4rem;
   font-weight: 600;
   line-height: 170%;
 }
 .we-are-happy {
   font-size: 4vw;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 38.75rem) {
   .trial-got-div {
-    padding: 24px 7.34% 64px;
+    padding: 1.5rem 7.34% 4rem;
   }
   .signed-up {
     font-size: 2rem;

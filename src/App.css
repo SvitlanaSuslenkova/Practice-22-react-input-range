@@ -24,7 +24,7 @@ body {
   color: var(--text);
 }
 main {
-  padding: 56px 6.4% 87px;
+  padding: 3.5rem 6.4% 5.438rem;
   text-align: center;
 }
 header {
@@ -33,9 +33,9 @@ header {
   background-position: center;
   background-size: auto 100%;
 
-  margin-bottom: 32px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  margin-bottom: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 
   display: flex;
   flex-direction: column;
@@ -55,7 +55,7 @@ h2 {
 .container {
   background-color: var(--pricing-component-background);
   border-radius: 0.5em;
-  padding: 36px 7.34% 32px;
+  padding: 2.25rem 7.34% 2rem;
   box-shadow: 0 0.1rem 2rem var(--toggle-background);
 }
 .page-views {
@@ -69,7 +69,7 @@ h1 {
   font-size: 8vw;
   color: var(--text-cta-background);
   font-weight: 800;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 h1 span {
   font-size: 3.5vw;
@@ -105,12 +105,12 @@ h1 span {
   margin-left: -8.5%;
   width: 117%;
   height: 1px;
-  margin-top: 32px;
-  margin-bottom: 24px;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
   background-color: var(--empty-slider-bar);
 }
 .icon-checked {
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 .advantages-list {
   font-size: 3vw;
@@ -124,16 +124,16 @@ button {
   font-size: 3.5vw;
   font-weight: 600;
   letter-spacing: 0.7px;
-  padding: 16px 48px;
+  padding: 1rem 3rem;
   border: 0;
-  border-radius: 60px;
-  margin-top: 24px;
+  border-radius: 3.75rem;
+  margin-top: 1.5rem;
 }
 button:hover {
   color: var(--pricing-component-background);
 }
 
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 38.75rem) {
   body {
     display: grid;
     min-height: 100vh;
@@ -141,11 +141,11 @@ button:hover {
     align-items: center;
   }
   main {
-    width: 540px;
+    width: 33.75rem;
     padding: 0;
   }
   header {
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
   }
 
   h2 {
@@ -187,7 +187,7 @@ button:hover {
   .billing-div {
     column-gap: 1rem;
     justify-content: end;
-    margin-top: 16px;
+    margin-top: 1rem;
   }
   .billing-span {
     font-size: 0.9rem;
@@ -210,15 +210,15 @@ button:hover {
     font-size: 0.9rem;
     margin-top: 0px;
     padding: 0;
-    height: 48px;
-    width: 180px;
+    height: 3rem;
+    width: 11.25rem;
     align-self: center;
     justify-self: end;
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 90rem) {
   body {
-    background-size: 100% 449px;
+    background-size: 100% 28.06rem;
   }
 }
