@@ -1,10 +1,10 @@
-import "./InputCheckbox.css";
-export default function InputCheckbox({ type, value, id, htmlFor, onClick }) {
+import './InputCheckbox.css';
+export default function InputCheckbox({ htmlFor, ...inputProps }) {
   return (
     <>
-      <input type={type} value={value} id={id} onClick={onClick}></input>
+      <input type="checkbox" {...inputProps}></input>
+      {/* label ONLY AFTER INPUT */}
       <label htmlFor={htmlFor}></label>
     </>
   );
 }
-// label ONLY AFTER INPUT
